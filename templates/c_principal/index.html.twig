@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CPrincipalController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ 'D:/Symfony/AP1_GARAGISTE/AP1_GARAGISTE/src/Controller/CPrincipalController.php'|file_link(0) }}">src/Controller/CPrincipalController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'D:/Symfony/AP1_GARAGISTE/AP1_GARAGISTE/templates/c_principal/index.html.twig'|file_link(0) }}">templates/c_principal/index.html.twig</a></code></li>
+    </ul>
+</div>
+
+<!-- Création du menu
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" data-bcup-haslogintext="no">Omega'rage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" data-bcup-haslogintext="no">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" data-bcup-haslogintext="no">PRESENTATION
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bcup-haslogintext="no">PRESTATION</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-bcup-haslogintext="no">MATERIELS</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#" data-bcup-haslogintext="no">Exemple</a>
+            <a class="dropdown-item" href="#" data-bcup-haslogintext="no">Exemple</a>
+            <a class="dropdown-item" href="#" data-bcup-haslogintext="no">Exemple</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-bcup-haslogintext="no">Exemple</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit" data-bcup-haslogintext="no">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+-->
+
+
+
+
+
+
+
+<!--
+<form>
+  <fieldset>
+    <legend>Formulaire de Contact</legend>
+    <div class="form-group">
+      <label for="exampleInputNom1" class="form-label mt-4">Nom</label>
+      <input type="nom" class="form-control" id="exampleInputNom1" aria-describedby="nomHelp" placeholder="Entrer votre adresse nom ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 42.4px;">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPrenom1" class="form-label mt-4">Prenom</label>
+      <input type="prenom" class="form-control" id="exampleInputPrenom1" aria-describedby="prenomHelp" placeholder="Entrer votre adresse prenom ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 42.4px;">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputNum1" class="form-label mt-4">Numéro</label>
+      <input type="num" class="form-control" id="exampleInputNum1" aria-describedby="numHelp" placeholder="Entrer votre adresse numéro ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 42.4px;">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre adresse email ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 42.4px;">
+    </div>
+    <div class="form-group">
+      <label for="motif1" class="form-label mt-4">Motif de la demande</label>
+      <select class="form-select" id="motif1">
+        <option>Motif 1</option>
+        <option>Motif 2</option>
+        <option>Motif 3</option>
+        <option>Motif 4</option>
+        <option>Motif 5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="zoneTextDescription" class="form-label mt-4">Description</label>
+      <textarea class="form-control" id="zoneTextDescription" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="formFile" class="form-label mt-4">Joindre un Fichier ici</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <fieldset class="form-group">
+      <legend class="mt-4">Radio buttons</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        <label class="form-check-label" for="optionsRadios1">
+          Option one is this and that—be sure to include why it's great
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        <label class="form-check-label" for="optionsRadios2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+        <label class="form-check-label" for="optionsRadios3">
+          Option three is disabled
+        </label>
+      </div>
+    </fieldset>
+</form>
+-->
+{% endblock %}

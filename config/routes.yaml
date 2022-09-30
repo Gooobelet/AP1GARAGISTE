@@ -1,0 +1,30 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+presentation : 
+    path: /presentation
+    controller: App\Controller\PresentationController::presentation
+
+connexion:
+    path: /connexion
+    controller: App\Controller\ConnexionController::connexion
+
+nouveaucompte:
+    path: /nouveaucompte
+    controller: App\Controller\NouveauCompteController::nouveaucompte
+
+accueil:
+    path: /accueil
+    controller: App\Controller\AccueilController::accueil
+
+prestation:
+    path: /prestation
+    controller: App\Controller\PrestationController::prestation
+
+avis:
+    path: /avis
+    controller: App\Controller\AvisController::avis
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::contact
