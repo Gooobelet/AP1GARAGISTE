@@ -1,0 +1,116 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 50px;
+}
+
+.mainform{
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+hr {
+    width: 500px;
+    height: 2px; 
+    border: 1px solid #1f807c;
+    color: #1f807c;
+    text-align: center;
+    margin: auto;
+  }
+
+.TitreFormulaire{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formGroupNom{
+    grid-area: 1/2/2/3;
+}
+
+.form-group-prenom{
+    grid-area: 1/3/1/3;
+}
+
+.color{
+    display: grid;
+    grid-template-columns: 500px 900px 500px;
+    grid-template-rows: 1fr;
+    background-color: rgb(216, 207, 207);
+    color: black;
+    height: 400px;
+    width: 100%;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: 1/2/2/2;
+    grid-gap: 10px 20px;
+}
+
+.description1{
+    grid-area: 3/1/3/1;
+    text-align: justify;
+}
+
+.description2{
+    grid-area: 3/2/3/2;
+    text-align: justify;
+}
+
+.description3{
+    grid-area: 3/3/3/3;
+    text-align: justify;
+}
+
+.logo1{
+    grid-area: 2/1/2/1;
+    height: 50px;
+    text-align: center;
+}
+
+.logo2{
+    grid-area: 2/2/2/2;
+    height: 50px;
+    text-align: center;
+}
+
+.logo3{
+    grid-area: 2/3/2/3;
+    height: 50px;
+    text-align: center;
+}
+
+.titreContactezNous{
+    grid-area: 1/2/1/2;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.boxAide{
+    grid-template-columns: subgrid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.textAide{
+    grid-area: 2/1/2/1;
+    font-size: 20px;
+    margin-left: 50px;
+    color: rgb(245, 230, 230);
+}
+
+.btn-primary{
+    margin-top: 20px;
+    float: right;
+}
