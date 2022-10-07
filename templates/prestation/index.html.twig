@@ -8,13 +8,28 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/src/Controller/PrestationController.php'|file_link(0) }}">src/Controller/PrestationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/templates/prestation/index.html.twig'|file_link(0) }}">templates/prestation/index.html.twig</a></code></li>
-    </ul>
+<div>
+  <p>Liste des prestations</p>
 </div>
+<div class="gridPresta">
+      <div class="presta">
+          <div class="titrePresta">Contrôle technique</div>
+          <div class="img controleTechnique"></div>
+          <p class="prix">Prix : 75€ TTC</p>
+          <p class="temps">Temps moyen : 45 min</p>
+      </div>
+      <div class="presta">
+        <div class="titrePresta">Vidange</div>
+        <div class="img vidange"></div>
+        <p class="prix">Prix : 70€ TTC</p>
+        <p class="temps">Temps moyen : 1 heure</p>
+    </div>
+    <div class="presta">
+        <div class="titrePresta">Changement des plaquettes de frein</div>
+        <div class="img plaquette"></div>
+        <p class="prix">Prix : varie selon les plaquettes</p>
+        <p class="temps">Temps moyen : 1 heure</p>
+    </div>
+</div> 
+
 {% endblock %}
