@@ -35,9 +35,7 @@ body {
   scroll-snap-type: x mandatory;
 }
 
-.slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
-}
+
 
 .slide {
   display: flex;
@@ -103,11 +101,12 @@ a.slide__next,
   box-sizing: border-box;
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 37%;
   width: 200px;
-  margin-top:50px;0
+  margin-top:50px;
   margin-left: -100px;
   text-align: center;
+  margin:auto;
 }
 
 .slider__navlink {
@@ -115,6 +114,7 @@ a.slide__next,
   height: 15px;
   width: 15px;
   border-radius: 50%;
+  border: 1px solid white;
   background-color: black;
   margin: 0 10px 0 10px;
 }
@@ -132,27 +132,62 @@ iframe[sandbox] .read-article{
   display: none;
 }
 
+
+
+.grid1 {
+
+	margin-bottom: 50px;
+	margin-left: 10%;
+    display: grid;
+    grid-template: 300px / 500px 500px;
+	column-gap: 150px;
+    grid-template-areas:
+    "A B";
+  }
+
+.rec1grid1{
+    grid-areas:A;
+    background:whitesmoke;
+    border-radius: 5%   ;
+    border : 2px solid black;
+}
+
+.rec2grid1{
+    grid-areas:A;
+    background:whitesmoke;
+    border-radius: 5%   ;
+    border : 2px solid black;
+
+}
+
+.tabH{
+    width:50%;
+    height:33%;
+    margin:auto;
+    margin-left:25%;
+}
+
 </style>
 <div class="slider-container">
   <div class="slider">
     <div class="slides">
       <div id="slides__1" class="slide">
-        <span class="slide__text"><img src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/></span>
+        <span class="slide__text"><img src="../../assets/img/elGaragisteBarbue.jpeg"/></span>
         <a class="slide__prev" href="#slides__4" title="Next"></a>
         <a class="slide__next" href="#slides__2" title="Next"></a>
       </div>
       <div id="slides__2" class="slide">
-        <span class="slide__text">2</span>
+        <span class="slide__text"><img src="../../assets/img/hommeBarbueAvecUneLampe.jpeg"/></span>
         <a class="slide__prev" href="#slides__1" title="Prev"></a>
         <a class="slide__next" href="#slides__3" title="Next"></a>
       </div>
       <div id="slides__3" class="slide">
-        <span class="slide__text">3</span>
+        <span class="slide__text"><img src="../../assets/img/GaragisteMoustachu.PNG"/></span>
         <a class="slide__prev" href="#slides__2" title="Prev"></a>
         <a class="slide__next" href="#slides__4" title="Next"></a>
       </div>
       <div id="slides__4" class="slide">
-        <span class="slide__text">4</span>
+        <span class="slide__text"><img src="../../assets/img/hommeBarbueQuiSoude.jpeg"/></span>
         <a class="slide__prev" href="#slides__3" title="Prev"></a>
         <a class="slide__next" href="#slides__1" title="Prev"></a>
       </div>
@@ -164,6 +199,18 @@ iframe[sandbox] .read-article{
       <a class="slider__navlink" href="#slides__4"></a>
     </div>
   </div>
+</div>
+<img src="../../assets/img/tableauHoraires.png" class="tabH">
+</div>
+<div class="grid1">
+<div class="rec1grid1">
+
+</div>
+<div class="rec2grid1">
+</div>
+
+
+
 </div>
 
 {% endblock %}
