@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=CONTACTRepository::class)
  */
-class CONTACT
+class CONTACT 
 {
     /**
      * @ORM\Id
@@ -18,18 +18,13 @@ class CONTACT
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $idContact;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $contenu;
 
     /**
      * @ORM\OneToOne(targetEntity=UTILISATEUR::class, cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $idUserContact;
 
@@ -51,18 +46,6 @@ class CONTACT
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getIdContact(): ?int
-    {
-        return $this->idContact;
-    }
-
-    public function setIdContact(int $idContact): self
-    {
-        $this->idContact = $idContact;
-
-        return $this;
     }
 
     public function getContenu(): ?string
