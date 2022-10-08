@@ -3,13 +3,16 @@
 {% block title %}Prestation{% endblock %}
 
 {% block body %}
+<link rel="stylesheet" href="../assets/stylePrestation.css">
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 <div>
-  <p>Liste des prestations</p>
+    </br>
+    <p class="listePresta">Liste des prestations</p>
+  <hr>
 </div>
 <div class="gridPresta">
       <div class="presta">
@@ -29,6 +32,24 @@
         <div class="img plaquette"></div>
         <p class="prix">Prix : varie selon les plaquettes</p>
         <p class="temps">Temps moyen : 1 heure</p>
+    </div>
+    <div class="presta">
+        <div class="titrePresta">Peinture</div>
+        <div class="img peinture"></div>
+        <p class="prix">Prix : varie selon le modèle et la peinture</p>
+        <p class="temps">Temps moyen : 2 heures</p>
+    </div>
+    <div class="presta">
+        <div class="titrePresta">Changement d'embrayage</div>
+        <div class="img embrayage"></div>
+        <p class="prix">Prix : 700€ à 1000€</p>
+        <p class="temps">Temps moyen : 5 heures</p>
+    </div>
+    <div class="presta">
+        <div class="titrePresta">Changement des pneus</div>
+        <div class="img pneu"></div>
+        <p class="prix">Prix : 15€/pneu + prix du pneu</p>
+        <p class="temps">Temps moyen : 45 min</p>
     </div>
 </div> 
 

@@ -56,6 +56,7 @@
 
 <div class="main">
   <form class="mainform">
+  {{ form_start(form) }}
     <fieldset>
     <legend class="TitreFormulaire">Formulaire de Contact</legend>
     <hr class="center_hr">
@@ -94,6 +95,19 @@
         <input class="form-control" type="file" id="formFile">
       </div>
       <button type="submit" class="btn btn-primary" data-bcup-haslogintext="no">Envoyer</button>
+      
+        {{ form_label(form.prenom) }}
+        {{ form_widget(form.prenom) }}
+  
+        {{ form_label(form.nom) }}
+        {{ form_widget(form.nom) }}
+
+        {{ form_label(form.email) }}
+        {{ form_widget(form.email) }}
+
+        {{ form_rest(form) }}
+        <button type="submit">Enregistrer</button>
+{{ form_end(form) }}
   </form>
 </div>
 {% endblock %}
