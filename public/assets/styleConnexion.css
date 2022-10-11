@@ -1,0 +1,48 @@
+.gridConnect{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      margin: 50px;
+      height: 400px;
+      grid-gap: 50px;
+}
+
+.connect{
+      grid-template-columns: 1;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #2c3e50;
+      border-radius: 30px;
+      background-color: #E5ECEF;
+      box-shadow: 6px 4px 5px gray;
+}
+
+.newAccount{
+      grid-template-columns: 2;
+      border-style: solid;
+      border-width: 3px;
+      border-color: #2c3e50;
+      border-radius: 30px;
+      background-color: #E5ECEF;
+      box-shadow: 6px 4px 5px gray;
+}
+
+.tbAdmin{
+      visibility: hidden;
+      pointer-events: none;
+}
+
+.tbForm{
+      margin: 5px;
+      margin-left: 30%;
+      font-size: 18px;
+}
+
+.titre{
+      text-align: center;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      text-decoration: underline;
+      margin-bottom: 20px;
+}
