@@ -1,22 +1,54 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PresentationController!{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+body{
+    
+background-color:#2C3E50;
+
+}
+h1{
+    text-align:center;
+    font-family: arial, helvetica, sans-serif;
+    font-size:60px;
+    color:white;
+    text-shadow:1px 1px 1px black;
+  
+}
+p{
+    text-align:center;
+    font-family: arial, helvetica, sans-serif;
+    color:white;
+    margin-left:5%;
+    margin-top:5%;
+    margin-bottom:5%;
+    margin-right:5%;
+    font-size:20px;
+}
+.bgTitre{
+    background-image: url("../../assets/img/ilSoude.jpeg");
+    width:100%;
+    background-size:cover;
+    background-attachment: fixed;
+    padding-top:15%;
+        padding-bottom:15%;
+        background-repeat: no-repeat;
+
+}
+
+
+
 </style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/src/Controller/PresentationController.php'|file_link(0) }}">src/Controller/PresentationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/templates/presentation/index.html.twig'|file_link(0) }}">templates/presentation/index.html.twig</a></code></li>
-    </ul>
+<div class="bgTitre">
+<h1>Présentation <img src="../../assets/logoPblanc.png"/></h1>
 </div>
+<p>Le n°1 français de la fabrication de rayonnages et d'équipement pour la manutention industrielle depuis 1963. Provost est présent partout en France pour la plus grande satisfaction de ses 80 000 clients, notre 1er garage fut crée le 13 février 1963 par Pablo Carosso, depuis l'entreprise ce trensempé de père en fils jusqu'aux aujourd'hui avec Tony Carosso. Nous avons pour ambition de vous fournir un service de proximité à la hauteur de vos attentes. OMEGA'RAGE c'est une équipe parfaitement formée et des équipements de pointe qui vous assurent des prestations de qualité à un prix raisonnable, sur toutes les marques de véhicules.</p>
+   <div class="SavoirFaire">
+    <h1>Notre savoir-faire</h1>
+    <p>Nous avons conscience de la nécessité absolue d'une formation régulière et de l'utilisation d'appareils modernes pour la réparation et la maintenance de votre véhicule. C'est pourquoi nous nous engageons à suivre régulièrement toute formation technique indispensable pour mieux répondre à vos besoins. Nous perfectionnons jour après jour les procédures de réparation et de contrôle. Lorsque nous prenons en charge votre véhicule, nous vous garantissons :d'en assurer l'entretien en respectant les préconisations du constructeur/préservant la garantie constructeurd'utiliser des pièces d'origine ou de qualité équivalentede vous offrir une prestation de qualité à un coût compétitif de vous apporter tous les services d'un réseau de professionnel reconnu.</p>
+    </div>
+
 
 
 

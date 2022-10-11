@@ -137,6 +137,7 @@ iframe[sandbox] .read-article{
     grid-template: 1fr / 50% 50%;
     grid-template-areas:
     "a b";
+    margin-bottom:15%;
 }
 
 
@@ -176,6 +177,7 @@ iframe[sandbox] .read-article{
 
 .pos{
   grid-area:t;
+  text-decoration: underline;
   
 }
 
@@ -207,6 +209,10 @@ iframe[sandbox] .read-article{
   box-shadow: 5px 5px 5px gray;
   transition:  0.2s ease-in-out;
 }
+
+
+  
+
 
 .offre4{
     grid-area: D;
@@ -275,13 +281,16 @@ iframe[sandbox] .read-article{
   box-shadow: 5px 5px 5px gray;
   border-radius:10px;
   margin:auto;
+  color:white;
   transition:  0.2s ease-in-out;
+  background-color:#2C3E50;
 
 }
 
 .btnV:hover{
    transform: scale(1.05);
 }
+
 </style>
 <div class="slider-container">
   <div class="slider">
@@ -320,9 +329,14 @@ iframe[sandbox] .read-article{
 
 
   <div class="tab">
-    <h1>Horaires d'ouverture</h1>
+    <h1 class="pos">Horaires d'ouverture</h1>
     <img src="../../assets/img/tableauHoraires.png" class="tabH">
-    <h1>Récupération de véhicule</h1>
+
+
+
+
+    
+    <h1 class="pos">Récupération de véhicule</h1>
     <div class="recupe">
       <img src="../../assets/img/voiturePourRécupe.jpeg" class="recupeV">
       <p class="txtR">Nous récuperont tout véhicule endomagé a prix d'or pour recyclé ce qui signifie que vous vendez un véhicule qui roule plus, nous optenons des pièces détaché et recyclon pour le bien de la planet</p>
