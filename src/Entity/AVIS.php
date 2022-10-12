@@ -18,11 +18,6 @@ class AVIS
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $idAvis;
-
-    /**
      * @ORM\Column(type="text")
      */
     private $avis;
@@ -33,27 +28,15 @@ class AVIS
      */
     private $idUserAvis;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+    /**
+     * @ORM\Column(type="string", length=20)
+     */
+    private $nom;
 
-    public function getIdAvis(): ?int
-    {
-        return $this->idAvis;
-    }
-
-    public function setIdAvis(int $idAvis): self
-    {
-        $this->idAvis = $idAvis;
-
-        return $this;
-    }
-
-    public function getAvis(): ?string
-    {
-        return $this->avis;
-    }
+    /**
+     * @ORM\Column(type="string", length=20)
+     */
+    private $prenom;
 
     public function setAvis(string $avis): self
     {
@@ -61,6 +44,14 @@ class AVIS
 
         return $this;
     }
+    
+
+    public function getAvis(): ?string
+    {
+        return $this->avis;
+    }
+
+
 
     public function getIdUserAvis(): ?UTILISATEUR
     {
@@ -70,6 +61,30 @@ class AVIS
     public function setIdUserAvis(UTILISATEUR $idUserAvis): self
     {
         $this->idUserAvis = $idUserAvis;
+
+        return $this;
+    }
+
+    public function getNom(): ?string
+    {
+        return $this->nom;
+    }
+
+    public function setNom(string $nom): self
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    public function getPrenom(): ?string
+    {
+        return $this->prenom;
+    }
+
+    public function setPrenom(string $prenom): self
+    {
+        $this->prenom = $prenom;
 
         return $this;
     }

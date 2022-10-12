@@ -8,13 +8,30 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<link href="../assets/styleAvis.css" rel="stylesheet" type="text/css" />
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/src/Controller/AvisController.php'|file_link(0) }}">src/Controller/AvisController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/templates/avis/index.html.twig'|file_link(0) }}">templates/avis/index.html.twig</a></code></li>
-    </ul>
+<div class="main">
+  <div class="mainform">
+  {{ form_start(formAvis) }}
+    <fieldset>
+    <legend class="TitreFormulaire">Formulaire d'Avis</legend>
+    <hr class="center_hr">
+      <div class="formGroupNom">
+        <label for="exampleInputNom1" class="form-label mt-4">{{ form_label(formAvis.nom) }}</label><br/>
+        {{ form_widget(formAvis.nom) }}
+      </div>
+      <div class="form-group-prenom">
+        <label for="exampleInputPrenom1" class="form-label mt-4">{{ form_label(formAvis.prenom) }}</label><br/>
+        {{ form_widget(formAvis.prenom) }}
+      </div>
+      <div class="form-group-desc">
+        <label for="zoneTextDescription" class="form-label mt-4">Description</label><br/>
+        {{ form_widget(formAvis.avis) }}
+      </div>
+      <button type="submit" class="btn btn-primary" href="#">Envoyer</button>
+
+  {{ form_end(formAvis) }}
+  </div>
 </div>
+
 {% endblock %}
