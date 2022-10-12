@@ -18,11 +18,10 @@ Les auteurs ayant contribuer a se projet :
 - **Jardin Clément**
 - **Max Michelet**
 
-## Installation de Symfony + SCOOP
+## Installation de Symfony / SCOOP
 
-![alt text](https://res.cloudinary.com/kahere/image/upload/v1626363464/kaherecode/tutorials/za6yxdjweqdus3hynonp.webp)
+![alt text](https://www.2le.net/wp-inside/uploads/2019/12/symfony-5-nouveautes-300x135.jpg)
 *Quelques étapes pour réaliser cette installation*
-1. Obtenir une clé API gratuitement avec cette adresse : [https://exemple.com](https://exemple.com)
 1. Dans une invite de commande PowerShell taper :
 ```
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote
@@ -37,9 +36,12 @@ irm get.scoop.sh | iex
 scoop install symfony-cli
 ```
 
-2. Cloner le repo du projet sous cette adresse : [https://github.com/Gooobelet/AP1GARAGISTE](https://github.com/Gooobelet/AP1GARAGISTE)
+## Installation du Projet
+![alt text](https://images.pexels.com/photos/115558/pexels-photo-115558.jpeg?cs=srgb&dl=pexels-lisa-fotios-115558.jpg&fm=jpg)
 
-3. Installer les micro-services important :
+1. Cloner le repo du projet sous cette adresse : [https://github.com/Gooobelet/AP1GARAGISTE](https://github.com/Gooobelet/AP1GARAGISTE)
+
+2. Installer les micro-services importants :
 ```
 composer require make
 ```
@@ -52,9 +54,13 @@ composer require twig
 ```
 composer require form
 ```
-4. Installer la base de donnée sous ce lien <a id="raw-url" href="https://github.com/Gooobelet/AP1GARAGISTE/Master/ap1_garagiste.sql">Click to Download</a>
+3. Installer la base de données sous ce lien <a id="raw-url" href="https://github.com/Gooobelet/AP1GARAGISTE/Master/ap1_garagiste.sql">Cliquer pour télécharger</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
+
+## License
+![alt text](https://www.channelfutures.com/files/2017/04/3_0-877x432.png)
+[MIT License](https://en.wikipedia.org/wiki/MIT_License)
 
 ## Contribution
 Si vous avez une suggestion qui améliorerait cela, veuillez bifurquer le dépôt et créer une demande d'extraction. Vous pouvez aussi simplement ouvrir un ticket avec le tag "amélioration". N'oubliez pas de mettre une étoile au projet ! Merci encore!
