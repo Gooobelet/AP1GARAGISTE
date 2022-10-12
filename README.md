@@ -66,6 +66,6 @@ composer require form
 Si vous avez une suggestion qui améliorerait cela, veuillez bifurquer le dépôt et créer une demande d'extraction. Vous pouvez aussi simplement ouvrir un ticket avec le tag "amélioration". N'oubliez pas de mettre une étoile au projet ! Merci encore!
 
 ## Contact
-Max Michelet - [@GitHub](https://github.com/Gooobelet) - [Email](max.michelet@stadjutor.com)
-Miguel Fenerol - [@Github](https://github.com/Migou27) - [Email](miguel.fenerol@stadjutor.com)
-Clément Jardin - [@github](https://github.com/jardinc27) - [Email](clement.jardin@stadjutor.com)
+Max Michelet - [@GitHub](https://github.com/Gooobelet) - [Email](max.michelet@stadjutor.com)  
+Miguel Fenerol - [@Github](https://github.com/Migou27) - [Email](miguel.fenerol@stadjutor.com)  
+Clément Jardin - [@github](https://github.com/jardinc27) - [Email](clement.jardin@stadjutor.com)  
