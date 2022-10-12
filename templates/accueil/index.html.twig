@@ -7,6 +7,7 @@ html,
 body {
   height: 100%;
   margin: 0px;
+  font-family: arial, helvetica, sans-serif;
 }
 
 .slider-container {
@@ -14,6 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-top:-10%;
 }
 
 .slider {
@@ -35,7 +37,9 @@ body {
   scroll-snap-type: x mandatory;
 }
 
+.slide__text{
 
+}
 
 .slide {
   display: flex;
@@ -120,51 +124,171 @@ a.slide__next,
 }
 
 
-
-
-
-
-
-
-
-
 iframe[sandbox] .read-article{
   display: none;
 }
 
 
 
-.grid1 {
 
-	margin-bottom: 50px;
-	margin-left: 10%;
+.grid1{
+    margin-top:-5%;
     display: grid;
-    grid-template: 300px / 500px 500px;
-	column-gap: 150px;
+    grid-template: 1fr / 50% 50%;
     grid-template-areas:
-    "A B";
-  }
-
-.rec1grid1{
-    grid-areas:A;
-    background:whitesmoke;
-    border-radius: 5%   ;
-    border : 2px solid black;
+    "a b";
+    margin-bottom:15%;
 }
 
-.rec2grid1{
-    grid-areas:A;
-    background:whitesmoke;
-    border-radius: 5%   ;
-    border : 2px solid black;
 
+
+
+
+.tab{
+  padding-top:10px;
+    grid-area:a;
+    text-align:center;
 }
+
 
 .tabH{
-    width:50%;
-    height:33%;
     margin:auto;
-    margin-left:25%;
+    width:95%;
+    height:auto;
+    margin-bottom:auto;
+    margin-top:25%;
+    margin-bottom:15%;
+}
+
+
+.grid2{
+  grid-area:b;
+  padding: 10px 10px 10px 10px;
+  text-align:center;
+  display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas:
+    "t t"
+    "A B"
+    "C D";
+    row-gap:50px;
+    column-gap:50px;  
+}
+
+.pos{
+  grid-area:t;
+  text-decoration: underline;
+  
+}
+
+.offre1{
+    grid-area: A;
+	background-color: white;
+  margin-top:-45%;
+  border : 1mm ridge black;
+  border-radius:5%;
+  box-shadow: 5px 5px 5px gray;
+  transition:  0.2s ease-in-out;
+}
+
+.offre2{
+    grid-area: B;
+	background-color: white;
+  margin-top:-45%;
+  border : 1mm ridge black;
+  border-radius:5%;
+  box-shadow: 5px 5px 5px gray;
+  transition:  0.2s ease-in-out;
+}
+
+.offre3{
+    grid-area: C;
+	background-color: white;	
+  border : 1mm ridge black;
+  border-radius:5%;
+  box-shadow: 5px 5px 5px gray;
+  transition:  0.2s ease-in-out;
+}
+
+
+  
+
+
+.offre4{
+    grid-area: D;
+	background-color: white;
+  border : 1mm ridge black;
+  border-radius:5%;
+  box-shadow: 5px 5px 5px gray;
+  transition:  0.2s ease-in-out;
+  }
+.offre1:hover {
+       transform: scale(1.05);
+  }
+  .offre3:hover {
+       transform: scale(1.05);
+  }
+  .offre2:hover {
+       transform: scale(1.05);
+  }
+  .offre4:hover {
+       transform: scale(1.05);
+  }
+
+
+.offreImg{
+  width: 80%;
+  height: 65%;
+}
+
+#aDate{
+  border-top:1mm ridge black;
+  padding-top: 2%;
+  margin-top: 2%;
+
+}
+
+.recupe{
+   border : 0.25mm ridge black;
+    box-shadow: 5px 5px 5px gray;
+    border-radius:15px;
+    margin: 75px 10px 10px 10px;
+    display: grid;
+    grid-template: 1fr 1fr / 35% 65%;
+    grid-template-areas:
+    "aR bR"
+    "cR cR";
+}
+.recupeV{
+  width:100%;
+  height:auto;
+  grid-area:aR;
+   border-radius:15px 0px 0px 0px;
+}
+
+.txtR{
+  grid-area:bR;
+  padding-top:10px;
+  font-size:20px;
+}
+
+.btnV{
+  grid-area:cR;
+  
+  border-top: 0.25mm ridge black;
+  width:50%;
+  height:70%;
+  box-shadow: 5px 5px 5px gray;
+  border-radius:10px;
+  margin:auto;
+  color:white;
+  transition:  0.2s ease-in-out;
+  background-color:#2C3E50;
+
+}
+
+.btnV:hover{
+   transform: scale(1.05);
 }
 
 </style>
@@ -177,17 +301,17 @@ iframe[sandbox] .read-article{
         <a class="slide__next" href="#slides__2" title="Next"></a>
       </div>
       <div id="slides__2" class="slide">
-        <span class="slide__text"><img src="../../assets/img/hommeBarbueAvecUneLampe.jpeg"/></span>
+        <span class="slide__text"><img src="../../assets/img/passezSousLeCapot.jpeg"/></span>
         <a class="slide__prev" href="#slides__1" title="Prev"></a>
         <a class="slide__next" href="#slides__3" title="Next"></a>
       </div>
       <div id="slides__3" class="slide">
-        <span class="slide__text"><img src="../../assets/img/GaragisteMoustachu.PNG"/></span>
+        <span class="slide__text"><img src="../../assets/img/GaragisteMoustachu.png"/></span>
         <a class="slide__prev" href="#slides__2" title="Prev"></a>
         <a class="slide__next" href="#slides__4" title="Next"></a>
       </div>
       <div id="slides__4" class="slide">
-        <span class="slide__text"><img src="../../assets/img/hommeBarbueQuiSoude.jpeg"/></span>
+        <span class="slide__text"><img src="../../assets/img/garagisteEnAction.jpeg"/></span>
         <a class="slide__prev" href="#slides__3" title="Prev"></a>
         <a class="slide__next" href="#slides__1" title="Prev"></a>
       </div>
@@ -199,18 +323,64 @@ iframe[sandbox] .read-article{
       <a class="slider__navlink" href="#slides__4"></a>
     </div>
   </div>
-</div>
-<img src="../../assets/img/tableauHoraires.png" class="tabH">
-</div>
+  </div>
+
 <div class="grid1">
-<div class="rec1grid1">
 
+
+  <div class="tab">
+    <h1 class="pos">Horaires d'ouverture</h1>
+    <img src="../../assets/img/tableauHoraires.png" class="tabH">
+
+
+
+
+    
+    <h1 class="pos">Récupération de véhicule</h1>
+    <div class="recupe">
+      <img src="../../assets/img/voiturePourRécupe.jpeg" class="recupeV">
+      <p class="txtR">Nous récuperont tout véhicule endomagé a prix d'or pour recyclé ce qui signifie que vous vendez un véhicule qui roule plus, nous optenons des pièces détaché et recyclon pour le bien de la planet</p>
+      <input type="button" class="btnV" value="Estimé mon véhicule"/>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <h1 class="pos">Nos offres du moment</h1>
+
+
+    <div class="offre1">
+      <img src="../../assets/img/SapinVoiture.jfif" class="offreImg">
+      <p></p>
+      <p>Pour toute opération sur votre véhicule un sapin parfument offert.</p>
+      <p id="aDate">Du 01/10/2022 au 31/10/2022.</p>
+    </div>
+
+    <div class="offre2">
+      <img src="../../assets/img/essuieGlasse.jpg.opdownload" class="offreImg">
+      <p></p>
+      <p>Pour toute opération parprise balet d'essuie glasse offert.</p>
+      <p id="aDate">Du 01/01/2022 au 31/12/2022.</p>
+    </div>
+
+    <div class="offre3">.
+      <img src="../../assets/img/supTel.jfif" class="offreImg">
+      <p></p>
+      <p>Pour toute opération sur votre véhicule de plus 50€ un support de téléphone offet</p>
+      <p id="aDate">Du 01/09/2022 au 31/11/2022.</p>
+    </div>
+
+
+    <div class="offre4">
+      <img src="../../assets/img/porteCle.jfif" class="offreImg">
+      <p></p>
+      <p>Pour toute opération sur pneu un porte clé offert</p>
+      <p id="aDate">Du 01/06/2022 au 31/11/2022.</p>
+    </div>
+  </div>
 </div>
-<div class="rec2grid1">
-</div>
 
 
 
-</div>
+<div  class=""></div>
 
 {% endblock %}

@@ -1,1 +1,36 @@
-hh
+.main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 50px;
+}
+
+.mainform{
+    grid-area: 1 / 2 / 2 / 5;
+}
+
+hr {
+    width: 500px;
+    height: 2px; 
+    border: 1px solid #1f807c;
+    color: #1f807c;
+    text-align: center;
+    margin: auto;
+  }
+
+.TitreFormulaire{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.btn-primary{
+    margin-top: 20px;
+    float: right;
+}

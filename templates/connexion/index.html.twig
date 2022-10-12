@@ -3,18 +3,67 @@
 {% block title %}Hello ConnexionController!{% endblock %}
 
 {% block body %}
+<link rel="stylesheet" href="../assets/styleConnexion.css">
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/src/Controller/ConnexionController.php'|file_link(0) }}">src/Controller/ConnexionController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/michelem/Documents/workspace gitkraken/AP1_GARAGISTE/AP1_GARAGISTE/templates/connexion/index.html.twig'|file_link(0) }}">templates/connexion/index.html.twig</a></code></li>
-    </ul>
+<div class="gridConnect">
+    <div class="connect">
+        <p class="titre">Se connecter</p>
+        {{ form_start(formCo) }}
+            <div class="tbForm">
+                {{ form_label(formCo.login)}} :
+                {{ form_widget(formCo.login)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(formCo.mdp)}} :
+                {{ form_widget(formCo.mdp)}}
+            </div>
+            </br>
+            <div class="tbForm">
+                <button type="submit">Se connecter</button>
+            </div>
+        {{ form_end(formCo) }}
+    </div>
+    <div class="newAccount">
+        <p class="titre">Créer un nouveau compte</p>
+        {{ form_start(form) }}
+            <div class="tbForm">
+                {{ form_label(form.nom)}} :
+                {{ form_widget(form.nom)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(form.prenom)}} :
+                {{ form_widget(form.prenom)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(form.tel)}} :
+                {{ form_widget(form.tel)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(form.mail)}} :
+                {{ form_widget(form.mail)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(form.login)}} :
+                {{ form_widget(form.login)}} 
+            </div>
+            <div class="tbForm">
+                {{ form_label(form.mdp)}} :
+                {{ form_widget(form.mdp)}}
+            </div>
+            <div class="tbAdmin">
+                {{ form_widget(form.admin)}}
+            </div>
+            <div class="tbForm">
+                <button type="submit">Enregistrer</button>
+            </div>
+        {{ form_end(form) }}
+    </div>
 </div>
+{% if app.session.get('ADMIN') is defined and app.session.get('ADMIN') == 1 %}
+    <p>Test concluant</p>
+{% endif %}
 {% endblock %}
