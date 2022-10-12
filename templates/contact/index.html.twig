@@ -49,29 +49,30 @@
 </div>
 
 <div class="main">
-  <form class="mainform">
+  <div class="mainform">
   {{ form_start(form) }}
     <fieldset>
     <legend class="TitreFormulaire">Formulaire de Contact</legend>
     <hr class="center_hr">
       <div class="formGroupNom">
         <label for="exampleInputNom1" class="form-label mt-4">{{ form_label(form.nom) }}</label><br/>
-        <input type="nom" class='{{ form_widget(form.nom) }}' id="exampleInputNom1" aria-describedby="nomHelp" placeholder="Entrer votre nom ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 937px;">
+        {{ form_widget(form.nom) }}
       </div>
       <div class="form-group-prenom">
         <label for="exampleInputPrenom1" class="form-label mt-4">{{ form_label(form.prenom) }}</label><br/>
-        <input type="prenom" class='form_widget(form.prenom)' id="exampleInputPrenom1" aria-describedby="prenomHelp" placeholder="Entrer votre prenom ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 937px;">
+        {{ form_widget(form.prenom) }}
       </div>
       <div class="form-group-mail">
         <label class="form-label mt-4">{{ form_label(form.email) }}</label><br/>
-        <input class='{{ form_widget(form.email) }}' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre adresse email ici" data-bcup-score="18" data-bcup="attached" style="padding-right: 937px;">
+        {{ form_widget(form.email) }}
       </div>
       <div class="form-group-desc">
         <label for="zoneTextDescription" class="form-label mt-4">Description</label><br/>
-        <textarea class='{{ form_rest(form) }}' id="zoneTextDescription" rows="3" style="padding-right: 937px;"></textarea>
+        {{ form_widget(form.contenu) }}
       </div>
-      <button type="submit" class="btn btn-primary">Enregistrer</button>
-{{ form_end(form) }}
-  </form>
+      <button type="submit" class="btn btn-primary" href="#">Envoyer</button>
+
+  {{ form_end(form) }}
+  </div>
 </div>
 {% endblock %}
