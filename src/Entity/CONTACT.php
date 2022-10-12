@@ -23,12 +23,6 @@ class CONTACT
     private $contenu;
 
     /**
-     * @ORM\OneToOne(targetEntity=UTILISATEUR::class, cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=true)
-     */
-    private $idUserContact;
-
-    /**
      * @ORM\Column(type="string", length=25)
      */
     private $email;
@@ -56,18 +50,6 @@ class CONTACT
     public function setContenu(string $contenu): self
     {
         $this->contenu = $contenu;
-
-        return $this;
-    }
-
-    public function getIdUserContact(): ?UTILISATEUR
-    {
-        return $this->idUserContact;
-    }
-
-    public function setIdUserContact(UTILISATEUR $idUserContact): self
-    {
-        $this->idUserContact = $idUserContact;
 
         return $this;
     }
