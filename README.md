@@ -20,7 +20,7 @@ Les auteurs ayant contribuer a se projet :
 
 ## Installation de Symfony / SCOOP
 
-![alt text](https://www.2le.net/wp-inside/uploads/2019/12/symfony-5-nouveautes-300x135.jpg)
+![alt text](https://www.2le.net/wp-inside/uploads/2019/12/symfony-5-nouveautes-300x135.jpg)  
 *Quelques étapes pour réaliser cette installation*
 1. Dans une invite de commande PowerShell taper :
 ```
