@@ -43,6 +43,8 @@ class ConnexionController extends AbstractController
                     if($oneUser->isAdmin()){
                         $this->get('session')->set('ADMIN', 1);
                         break;
+                    }else{
+                        $this->get('session')->set('ADMIN', 0);
                     }
                 }
             }

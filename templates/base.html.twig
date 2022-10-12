@@ -33,9 +33,6 @@
           <a class="nav-link" href="prestation" data-bcup-haslogintext="no">PRESTATION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" data-bcup-haslogintext="no">MATERIEL</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="avis" data-bcup-haslogintext="no">AVIS</a>
         </li>
         <li class="nav-item">
@@ -48,6 +45,12 @@
     </div>
   </div>
 </nav>
+{% if app.session.get('ADMIN') is defined and app.session.get('ADMIN') != null %}
+    <button class="deco" onclick="">Déconnexion</button>
+    {% if app.session.get('ADMIN') == 1 %}
+      <p class="admin">! MODE ADMIN !</p>
+    {% endif %}
+{% endif %}
     {% endblock %}
     <body>
         {% block body %}{% endblock %}
